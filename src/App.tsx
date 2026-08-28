@@ -1,4 +1,5 @@
 import { Disclosure } from "../playground/Disclosure/Disclosure";
+import { Tabs } from "../playground/Tabs/Tabs";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,15 @@ function App() {
           and other assistive technology — not just mouse/visual users.
         </p>
       </Disclosure>
+
+      <h2 style={{ marginTop: "2rem" }}>Tabs</h2>
+      <Tabs
+        tabs={[
+          { label: "Overview", content: <p>This is the overview panel content.</p> },
+          { label: "Details", content: <p>This is the details panel content.</p> },
+          { label: "Settings", content: <p>This is the settings panel content.</p> },
+        ]}
+      />
     </div>
   );
 }

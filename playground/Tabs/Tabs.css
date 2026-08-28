@@ -1,0 +1,39 @@
+.tabs {
+  margin-top: 1rem;
+}
+
+.tablist {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.tab {
+  padding: 0.6rem 1.2rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #4b5563;
+}
+
+.tab.active {
+  color: #1d4ed8;
+  border-bottom-color: #1d4ed8;
+  font-weight: 600;
+}
+
+.tab:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.tabpanel {
+  padding: 1rem 0.25rem;
+}
+
+.tabpanel:focus-visible {
+  outline: 2px dashed #2563eb;
+  outline-offset: 4px;
+}
